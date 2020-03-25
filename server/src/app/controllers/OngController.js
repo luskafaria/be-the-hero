@@ -32,7 +32,7 @@ class OngController {
 
       const ong = await Ong.create({ id, name, email, whatsapp, city, uf });
 
-      return res.json({ ong });
+      return res.json(ong);
     } catch (error) {
       console.error(error);
     }
